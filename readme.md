@@ -52,3 +52,4 @@ Biblioteca de JavaScript utilizada para construir interfaces de usuario mediante
 ## Estado del proyecto
 
 En desarrollo, como parte de las actividades académicas de Programación III.
+
