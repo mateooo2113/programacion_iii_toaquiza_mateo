@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Registro de pedidos</title>
+</head>
+<body>
+
+
+    <header>
+        <h1>Decowood</h1>
+        <p>Registro de pedidos</p>
+    </header>
+
+
+    <hr>
+
+
+    <main>
+
+
+        <form action="#"
+              method="get"
+              id="registro-pedidos">
+
+
+            <fieldset>
+                <legend>Información del pedido</legend>
+                <label for="codigo">
+                    Código de pedido:
+                </label>
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="PED-001"
+                       maxlength="10"
+                       required>
+                <br><br>
+                <label for="responsable">
+                    Carpintero asignado:
+                </label>
+                <select id="responsable"
+                        name="responsable"
+                        required>
+                    <option value="">
+                        Selecciona un carpintero
+                    </option>
+                    <option value="juan">
+                        Juan Perez
+                    </option>
+                    <option value="carlos">
+                        Carlos Gomez
+                    </option>
+                    <option value="miguel">
+                        Miguel Silva
+                    </option>
+                </select>
+                <br><br>
+
+                <label for="direccion">
+                    Lugar de entrega:
+                </label>
+                <input type="text"
+                       id="direccion"
+                       name="direccion"
+                       placeholder="Taller o Domicilio"
+                       required>
+                <br><br>
+
+
+                <label for="fecha">
+                    Fecha de entrega:
+                </label>
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Especificaciones</legend>
+                <p>Prioridad del trabajo:</p>
+                <input type="radio"
+                       id="alta"
+                       name="prioridad"
+                       value="alta"
+                       required>
+                <label for="alta">Alta</label>
+                <input type="radio"
+                       id="media"
+                       name="prioridad"
+                       value="media">
+
+
+                <label for="media">Media</label>
+
+
+                <input type="radio"
+                       id="baja"
+                       name="prioridad"
+                       value="baja">
+
+
+                <label for="baja">Baja</label>
+
+
+                <br><br>
+
+
+                <label for="complejidad">
+                    Nivel de complejidad (1 a 10):
+                </label>
+
+
+                <input type="number"
+                       id="complejidad"
+                       name="complejidad"
+                       min="1"
+                       max="10"
+                       value="5">
+
+
+                <p>Servicios adicionales:</p>
+
+
+                <input type="checkbox"
+                       id="barniz"
+                       name="servicios"
+                       value="barniz">
+
+
+                <label for="barniz">
+                    Barniz premium
+                </label>
+
+
+                <br>
+
+
+                <input type="checkbox"
+                       id="instalacion"
+                       name="servicios"
+                       value="instalacion">
+
+
+                <label for="instalacion">
+                    Instalación a domicilio
+                </label>
+
+
+                <br>
+
+
+                <input type="checkbox"
+                       id="diseno"
+                       name="servicios"
+                       value="diseno">
+
+
+                <label for="diseno">
+                    Diseño gratis
+                </label>
+
+
+            </fieldset>
+
+
+            <br>
+
+
+            <fieldset>
+                <legend>Descripción del mueble</legend>
+
+
+                <label for="descripcion">
+                    Detalles de fabricación:
+                </label>
+
+
+                <br>
+
+
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe el mueble a fabricar..."
+                          required></textarea>
+
+
+            </fieldset>
+
+
+            <br>
+
+
+            <button type="submit">
+                Registrar pedido
+            </button>
+
+
+            <button type="reset">
+                Limpiar datos
+            </button>
+
+
+        </form>
+
+
+    </main>
+
+
+    <hr>
+
+
+    <footer>
+        <p>
+            <small>
+                Carpintería Decowood - 2026
+            </small>
+        </p>
+    </footer>
+
+
+</body>
+</html>
