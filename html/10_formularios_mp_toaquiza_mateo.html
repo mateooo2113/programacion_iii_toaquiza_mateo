@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decowood</title>
+</head>
+<body>
+    <form action="/registro" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan">
+                </td>
+            
+            
+                <td>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ej: Pérez">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password">
+                </td>
+            
+            
+                <td>
+                    <label for="password_confirm">Confirmar Password</label><br>
+                    <input type="password" name="password_confirm" id="password_confirm">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cantidad">Cantidad</label><br>
+                    <input type="number" name="cantidad" id="cantidad">
+                </td>
+            
+            
+                <td>
+                    <label for="medida">Medida en cm</label><br>
+                    <input type="number" name="medida" id="medida" min="10" max="100" value="50" step="5">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p> Selecciona el material</p>
+                    <input type="radio" name="material" id="roble" value="roble">
+                    <label for="roble">Roble</label><br>
+                    <input type="radio" name="material" id="pino" value="pino">
+                    <label for="pino">Pino</label>
+                </td>
+                <td>
+                    <p>Selecciona los acabados</p><br>
+                    <input type="checkbox" id="brillante" name="acabados" value="brillante">
+                    <label for="brillante">Brillante</label><br>
+
+                    <input type="checkbox" id="mate" name="acabados" value="mate">
+                    <label for="mate">Mate</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="espacio">Espacio de destino</label><br>
+                    <select name="espacio" id="espacio" required>
+                        <option value="sala">Sala</option>
+                        <option value="comedor">Comedor</option>
+                        <option value="dormitorio">Dormitorio</option>
+                    
+                    </select>
+                </td>
+                <td>
+
+                    <label for="herrajes">Entrega</label><br>
+                    <select name="entrega" id="entrega" required>
+                        <option value="taller">En Taller</option>
+                        <option value="domicilio">A domicilio</option>
+
+                    </select>
+                </td>
+            </tr>
+
+                <td>
+                    <fieldset>
+                        <legend>Datos generales</legend>
+                        <label for="observaciones">Observaciones</label><br>
+                        <input type="text" name="observaciones" id="observaciones">
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>
