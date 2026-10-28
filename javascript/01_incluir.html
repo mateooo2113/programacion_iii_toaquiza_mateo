@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introsuccion a Javascript</title>
+    <script>
+        alert("Corre morty al inicio de la pagina")
+        console.log('Saludo desde el inicio de la pagina')
+    </script>
+</head>
+<body>
+    <h1>Incluir Javasript en documento html</h1>
+    <h2>Modo Inline</h2>
+    <button onclick="alert('!Corre, Morty!')">
+        Mostrar Mensaje
+    </button>
+    <input type="text"
+        oninput="console.log(this.value)"
+        placeholder="Escribe algo..."
+    >    
+    <input type="text"
+        onchange="console.log('Valor final guardado',this.value)"
+        placeholder="Escribe algo..."
+    >
+
+    <input type="text"
+        onfocus="console.log('El ususario està escribiendo aquí')"
+        onblur="console.log('Saliste del campo de texto')"
+        placeholder="Escribe algo..."
+    >  
+    <script src="01_incluir.js"></script>
+
+
+</body>
+</html>
