@@ -5,3 +5,17 @@ console.log("Elemento 2",personajes[2]);
 console.log("Elemento 3",personajes[3]);
 console.log("Elemento 4",personajes[4]);
 console.log("Tamaño del arreglo",personajes.length);
+
+console.log("Incluir elementos a un arreglo con push");
+personajes.push("Gonzales");
+console.log("Personajes",personajes);
+personajes.unshift("JAvi");
+console.log("Personajes",personajes);
+console.log("Modificar elementos de un arreglo");
+personajes[0]="Javier";
+console.log("Personajes",personajes);
+console.log("Eliminar elementos de un arreglo");
+personajes.shift();
+console.log("Personajes",personajes);
+personajes.splice(1, 1);
+console.log("Personajes",personajes);
