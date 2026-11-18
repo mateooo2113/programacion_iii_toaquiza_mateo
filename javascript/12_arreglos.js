@@ -1,21 +1,28 @@
-let personajes =["Rick", "Morty", "Summer", "Beth", "Jerry","Mateo","Toaquiza"];
-console.log("Elemento 0",personajes[0]);
-console.log("Elemento 1",personajes[1]);
-console.log("Elemento 2",personajes[2]);
-console.log("Elemento 3",personajes[3]);
-console.log("Elemento 4",personajes[4]);
-console.log("Tamaño del arreglo",personajes.length);
+let personajes = ["Rick", "Morty", "Summer", "Jerry", "Mateo", "Toaquiza"];
+console.log("Elemento 0", personajes[0]);
+console.log("Elemento 2", personajes[2]);
+console.log("Elemento 5", personajes[5]);
+console.log("Elemento 4", personajes[4]);
+console.log("Tamaño del arreglo ", personajes.length);
+console.log("Personajes: ", personajes);
 
-console.log("Incluir elementos a un arreglo con push");
-personajes.push("Gonzales");
-console.log("Personajes",personajes);
-personajes.unshift("JAvi");
-console.log("Personajes",personajes);
-console.log("Modificar elementos de un arreglo");
-personajes[0]="Javier";
-console.log("Personajes",personajes);
-console.log("Eliminar elementos de un arreglo");
+console.log("Incluir elementos a un arreglo con Push");
+personajes.push("Llusca");
+console.log("Personajes: ", personajes);
+
+personajes.unshift("Isaias");
+console.log("Personajes: ", personajes);
+
+console.log("modificar elementos a un arreglo");
+personajes[0] = "Isaias";
+console.log("Personajes: ", personajes);
+
+console.log("Eliminar un elemento del arreglo :");
+personajes.pop();
+console.log("Personajes :", personajes);
+
 personajes.shift();
-console.log("Personajes",personajes);
+console.log("Personajes :", personajes);
+
 personajes.splice(1, 1);
-console.log("Personajes",personajes);
+console.log("Personajes :", personajes);
