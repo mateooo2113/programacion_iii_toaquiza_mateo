@@ -7,30 +7,26 @@
     <script src="06_crud_arreglo.js" defer></script>
 </head>
 <body>
-    <h1>Registro interdimensional</h1>
-    <h2 id="tituloFormulario">Registro Persona</h2>
+    <h1>Registro Interdimensional</h1>
+    <h1 id = "tituloFormulario">Registro Persona</h1>
     <form id="formulario">
         <input type="text"
-            id="nombre"
-        >
-
+        id="nombre">
         <select id="dimension">
-            <option value="C-137 ">C-137</option>
+            <option value="C-137">C-137</option>
+            <option value="C-131">C-131</option>
             <option value="C-500">C-500</option>
-            <option value="C-1000">C-1000</option>
         </select>
-        <select id="estado">
-            <option value="vivo">Vivo</option>
-            <option value="muerto">Muerto</option>
-            <option value="desconocido">Desconocido</option>
+         <select id="estado">
+            <option value="Vivo">Vivo</option>
+            <option value="Muerto">Muerto</option>
+            <option value="Desconocido">Desconocido</option>
         </select>
-
-        <button type="submit" id="guardar">Guardar</button>
+        <button type="submit" id="guardar">Agregar</button>
         <button type="button" id="cancelar">Cancelar</button>
     </form>
-    <h2>Personakes REgistrados</h2>
-    <h2>Cantidad</h2>
+    <h2>Personajes Registrados</h2>
+    <h2 id="cantidad">Cantidad</h2>
     <div id="contenedor"></div>
-
 </body>
 </html>

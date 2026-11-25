@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decowood</title>
+    <script src="06_crud_arreglo_mp_toaquiza_mateo.js" defer></script>
+</head>
+<body>
+    <h1>Registro DecoWood</h1>
+    <h1 id = "tituloFormulario">Registro de Mueble</h1>
+    <form id="formulario">
+        <input type="text"
+        id="nombre">
+        <select id="madera">
+            <option value="Roble">Roble</option>
+            <option value="Pino">Pino</option>
+            <option value="Cedro">Cedro</option>
+        </select>
+         <select id="estado">
+            <option value="Pendiente">Pendiente</option>
+            <option value="En proceso">En proceso</option>
+            <option value="Entregado">Entregado</option>
+        </select>
+        <button type="submit" id="guardar">Agregar</button>
+        <button type="button" id="cancelar">Cancelar</button>
+    </form>
+    <h2>Muebles Registrados</h2>
+    <h2 id="cantidad">Cantidad</h2>
+    <div id="contenedor"></div>
+</body>
+</html>
